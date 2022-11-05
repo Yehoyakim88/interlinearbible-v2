@@ -1,0 +1,737 @@
+/* ######################### print-friendly stuff ######################### */
+.print_only {
+    display: none;
+}
+
+@media print {
+    .print_only {
+        display: inherit;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    /* Global override for CSS hover effects */
+    *:hover {
+        border: inherit !important;
+        border-color: inherit !important;
+        border-width: inherit !important;
+        color: inherit !important;
+    }
+
+    /* Global Overrides for EVERY element in print render ... careful please... */
+    * {
+        background: none !important;
+        overflow: visible !important;
+        float: unset !important;
+        overflow: visible !important;
+        overflow-y: visible !important;
+    }
+
+    /* Sadly needed kludge to get print working in Firefox, which HATES printing display:flex content */
+    .row,
+    .bibleFlex {
+        flex-direction: unset;
+        display: block;
+    }
+
+    /* Print Header */
+    #broughtBy {
+        margin-bottom: 10px;
+        padding-left: 40%;
+        padding-right: 40%;
+    }
+
+    /* Stuff to ALWAYS hide in print */
+    #responsiveNav,
+    .social,
+    div.ponies,
+    .flex-video,
+    #homeSearch,
+    .close,
+    .siteDesc,
+    .squisher,
+    #mobAppSoc,
+    #reading-listening,
+    .back-top,
+    #mobileNav,
+    .userback-button-container,
+    #pageControls,
+    #mobileNav,
+    #dView,
+    a[data-type="toolsHover"],
+    div.back-link,
+    #popupDiv,
+    #appCiteDrop,
+    #sharePop,
+    #footNoteDiv,
+    #toolPop,
+    #scriptDiv,
+    #homeLogin,
+    #copyTooltip,
+    .ftnt,
+    #poniesSquish,
+    #drive_2017_EOY_Coat,
+    #drive_2017_EOY,
+    #lightboxOverlay,
+    #lightbox,
+    #ads,
+    #bodyCol2,
+    #appBar,
+    body #contextBarT,
+    #menuTop,
+    #betaTag,
+    #homeLoginMenu,
+    body #theFoot,
+    #copyOptions,
+    #cBarClipT,
+    #cookie-wrapper,
+    .contextNav,
+    #devotionalsFoot,
+    .dbrpButton,
+    #interClose,
+    .lexpop:not([rel="lexicon.twot"]),
+    #lexPronunc,
+    #lexicon #InflectionOccurrences .show-hide-ten {
+        display: none !important;
+    }
+
+    /* Bible Pages */
+    body .bible .bibleTable .tablet-order-1 a[data-type='toolsHover'],
+    body img.copyBox,
+    body img.copyBox.show-for-tablet,
+    body .show-for-tablet > p > a[data-type="tools"],
+    body .bible .bibleTable .pMarkers {
+        display: none !important;
+    }
+    body.bible.viewport, 
+    body.bible.viewport #whole, 
+    body.bible.viewport #whole .bodyCol-wrapper { min-width: unset !important; } 
+
+    body.bible #bodyCol1 .bubble .bubHead h1 { margin-left: 10px; }
+    body:not(.viewport) .bible .bibleTable > .row, .bible .bibleTable > .row, .bible .bibleTable .tablet-order-2 p { padding: 0; }
+    body.bible [data-print-verse-prefix]:before {
+        content: attr(data-print-verse-prefix);
+        margin-right: 2px;
+        font-family: monospace;
+        opacity: .7;
+        font-size: .8em;
+        position: relative;
+        top: -3px;
+    }
+    body:not(.viewport) .bible .bibleTable .tablet-order-3 {
+        max-width: 100%;
+    }
+
+    .bibleLogos {
+        width: 80px !important;
+        max-width: 80px !important;
+    }
+
+    .bibleTable,
+    #bibleTable * {
+        width: unset;
+    }
+
+    #bibleTable .columns.tablet-2,
+    .bibleTable .columns.tablet-2 {
+        display: none;
+    }
+
+    .bibleCopyright a,
+    .bibleCopyright br {
+        display: none;
+    }
+
+    #whole,
+    #container,
+    .bodyCol-wrapper,
+    #bodyCol1 {
+        min-width: 100%;
+        width: 100%;
+    }
+
+    .verseSelected * {
+        border: none !important;
+    }
+
+    /* Bible Tabs */
+    #interruptRow>div {
+        padding: 0px 0px 0px 25px !important;
+    }
+
+    /* Bible Tab -> Interlinear */
+    #interruptRow #interToolsSelectMenu,
+    #interruptRow .interTools,
+    #interlinear .button-group,
+    #interlinear .show-for-medium,
+    #interruptRow #interlinear div.parse,
+    div#interlinear div.lexPronunc,
+    #closeTool,
+    #interlinear .hide-for-medium {
+        display: none !important;
+    }
+
+    #interruptRow #interlinear .header-row {
+        margin-top: 12px;
+    }
+
+    #interruptRow #interlinear .header-row,
+    div#interlinear .row {
+        display: flex !important;
+    }
+
+    #interruptRow #interlinear .header-row div br {
+        content: " ";
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+    #interruptRow #interlinear .row .columnss span.block {
+        display: inline !important;
+    }
+
+    #concData>#interlinear>#interVSinter {
+        text-align: left !important;
+    }
+
+    #interruptRow #interlinear .row .columnss span.block:not(:last-child)::after {
+        content: ',';
+    }
+
+    /* Bible Tab -> Translations */
+    #interruptRow #verDataTable .show-for-tablet,
+    #verDataTable .columns p>a {
+        display: none !important;
+    }
+
+    #interruptDiv>#verData>div>div {
+        text-align: left;
+        color: black;
+        border: none;
+        margin: 10px;
+    }
+
+    #interruptRow #verDataTable #bver_tb01 div[data-translation]::before {
+        content: "["attr(data-translation) "]";
+        margin-right: 10px;
+        font-weight: bold;
+        font-variant: small-caps;
+        letter-spacing: 1px;
+    }
+
+    #verDataTable div[data-translation] div:last-child,
+    #verDataTable div[data-translation] div:last-child>div,
+    #verDataTable div[data-translation] div:last-child>div>p {
+        display: inline;
+    }
+
+    #interruptRow #verDataTable .row>.row:not([data-translation]) {
+        display: none !important;
+    }
+
+    #interruptRow #verDataTable,
+    #interruptRow #verDataTable * div.columns,
+    #interruptDiv.biblesTab {
+        border-color: transparent !important;
+    }
+
+    /* Bible Tab -> Cross Refs */
+    #interruptRow #tskCopy,
+    #interruptRow #corrData table>thead td>a,
+    #interruptRow #corrData .hide-for-tablet {
+        display: none !important;
+    }
+
+    #interruptRow #corrNav,
+    #interruptRow #tskNarration {
+        border: none;
+        text-align: left;
+    }
+
+    #interruptRow #corrNav>a,
+    #interruptRow #tskResults .tskPhrase {
+        color: black;
+        border: none;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-variant: small-caps;
+        font-size: 110%;
+    }
+
+    #interruptRow #corrNav>a {
+        font-size: 1.25em;
+    }
+
+    #interruptRow #tskResults {
+        border: none !important;
+    }
+
+    #interruptRow #corrData>.tsk>.tskResults>.tskResultsTable .row .row {
+        padding: 0 !important;
+        font-size: 90%;
+    }
+
+    /* Bible Tab -> Commentaries */
+    #interruptRow #commData {
+        display: none !important;
+    }
+
+    /* Bible Tab -> Dictionaries */
+    #interruptRow #refData {
+        display: none !important;
+    }
+
+    /* Bible Tab -> Misc */
+    #interruptRow #miscData {
+        display: none !important;
+    }
+
+    /* Bible Feet */
+    .bibleFeet>#fnContainer {
+        page-break-inside: avoid;
+    }
+
+    /* Inline Interlinear view */
+    #refContent .flexBreak {
+        page-break-inside: avoid;
+    }
+
+    #refContent .wordBlock[data-word] {
+        page-break-inside: avoid;
+        background-color: none;
+        box-shadow: none;
+        border-radius: 0px;
+        font-size: 88%;
+    }
+
+    #refContent .wordBlock[data-word] a {
+        text-decoration: none;
+    }
+
+    #refContent .wordBlock[data-word] span.code::before {
+        display: none !important;
+    }
+
+    /*Commentary Pages */
+    .back-link,
+    div#crumbs,
+    .row.contextNav {
+        display: none;
+    }
+
+    body,
+    div.bibleFeet {
+        background: none;
+    }
+
+    #whole {
+        padding-top: 10px !important;
+    }
+
+    #commData {
+        font-size: 80%;
+    }
+
+    .harmony-table-row {
+        display: flex !important;
+        justify-content: flex-end;
+    }
+
+    .harmony-table-row.header-row {
+        justify-content: flex-start;
+    }
+
+    .harmony-table-row.header-row>div {
+        width: 100%;
+    }
+
+    /* Devotional Pages */
+    #dbdbg+.return,
+    #me+.return,
+    #promises+.return,
+    .dbrpButton,
+    #dbrpReader> :not(.bible):not(.dbrp-fnContainer),
+    #promises>#devotionalsBody>p:first-child {
+        display: none !important;
+    }
+
+    body,
+    body #whole,
+    body #whole>#container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    body.bible>#whole.wholeTop,
+    body.lexicon>#whole.wholeTop,
+    body.hta>#whole.wholeTop,
+    body.search>#whole.wholeTop {
+        padding-top: 0;
+    }
+
+    body #whole.wholeTop {
+        padding: 0;
+        background-image: none;
+    }
+
+    body #whole.wholeTop>#container {
+        min-height: 100px;
+    }
+
+    #toolsHndl {
+        display: none;
+    }
+
+    #bodyCol1 {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border-width: 0;
+    }
+
+    #bodyCol1>div>.bubHead,
+    #bodyCol1>div>.bubHead>div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border-width: 0;
+    }
+
+    #bodyCol1>div>.bubHead>div>h1,
+    #bodyCol1>div>.bubBody h1,
+    body div>div>#bodyCol1>.bubble>#bubBody>div>div>h1,
+    body div>div>#bodyCol1>.bubble>#bubBody>.faqBody>h1 {
+        text-shadow: 0 0 0 #000;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        border-width: 0;
+        border-bottom: solid #000 1px;
+        color: #000;
+    }
+
+    #bodyCol1>.bubble>#bubBody>div.bible table#bibleTable>tbody>tr>td>h1 {
+        border-bottom: solid #000 0;
+    }
+
+
+    #bodyCol1>div>.bubHead>div>.squisher {
+        display: none;
+    }
+
+    #bodyCol1>div>.bubBody {
+        border-width: 0;
+    }
+
+    #bodyCol1>div>.bubBody>.bible>#bibleTable>tbody>tr>td:first-child img {
+        display: none;
+    }
+
+    #bodyCol1>div>.bubBody>.bible>#bibleTable>tbody>tr>td:first-child[colspan="3"] {
+        display: table-cell;
+        width: 100%;
+    }
+
+    #bodyCol1>div>.bubBody>.bible>#bibleTable>tbody>tr>td:first-child+td {
+        width: 15%;
+        border-width: 0;
+    }
+
+    #bodyCol1>div>.bubBody>.bible>#bibleTable>tbody>tr>td:first-child+td img {
+        display: none;
+    }
+
+    #bodyCol1>div>.bubBody>.bible>#bibleTable>tbody>tr>td:first-child+td+td {
+        width: 85%;
+        border-width: 0;
+    }
+
+    #bodyCol1>div>.bubBody>.bible>#bibleTable>tbody>tr>td>p,
+    #bodyCol1>div>.bubBody>.bible>table>tbody>tr>td>div {
+        border-width: 0;
+        font-size: 1em;
+    }
+
+    /*Lexicon Pages */
+    #bubBody #lexicon > .lexiconTable > .row {
+        flex: 1;
+        flex-wrap: nowrap;
+    }
+    #bubBody #lexicon > .lexiconTable > .row > .columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 200px;
+    }
+    #bubBody #lexicon > .lexiconTable > .row > .columns .lexicon-label {
+        width: 100%;
+        display: flex;
+        flex: 1;
+    }
+    #lexicon .columns.table-styles,
+    #lexicon .row .columns .expandable, #lexicon .row .columns .lexicon-label { 
+        font-size: 1.25em;
+        padding: 5px;
+    }
+    #lexicon #lexTitle h6.lexTitleHb { font-size: 3em; }
+    #bubBody #lexicon > .lexiconTable > .row .columns .small-text-right { margin: 5px; }
+    #bubBody #lexicon > .lexiconTable > .lex-expand { min-width: calc(100vw - 20px); }
+    #lexicon > .lexiconTable .lex-expand .table-styles { padding: 10px 5px; }
+    #lexicon .row .expandable:before { content: ""; }
+    #lexicon .row .columns #outlineBiblical, 
+    #lexicon .row .columns #BDBTayersLexBlock,
+    #lexicon .row .columns #HebrewLexImg,
+    #lexicon .row .columns #InflectionOccurrences { display: initial; }
+    #lexicon .row .columns #InflectionOccurrences .greek-occur-count:not(.active) { display: none;}
+    #lexicon .row .columns #InflectionOccurrences #greek-tr-inflections, 
+    #lexicon .row .columns #InflectionOccurrences #greek-mgnt-inflections, 
+    #lexicon .row .columns #InflectionOccurrences #greek-lxx-inflections {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 15px;
+    }
+    #lexicon .row .columns #InflectionOccurrences .greek-inflections:not(.active) {
+        display: none !important;
+    }
+    #lexicon .row .columns #InflectionOccurrences .greekInflection {
+        flex-basis: initial;
+        min-width: 230px;
+    }
+    #bubBody #lexicon > .lexiconTable > .row .columns strong, 
+    #lexCount > .row > .columns > .lexicon-label+div, 
+    .lexStrongsDef, #lexyText, #HebrewLexImg { margin: 10px 5px 0px 15px; }
+    #lexicon #outlineBiblical { font-size: 105%; }
+    #lexResults .bibleTable { margin-left: 15px; }
+    #lexResults .bibleTable .bVerse .bVerse__col-two { display: inline-block; padding: 0; }
+    body:not(.viewport) #lexResults .row .table-styles { padding: 0; }
+    body:not(.viewport) #lexResults .row .table-styles .lexicon-label h2 { 
+        font-size: 1.25em;
+        background-color: #eee !important;
+        display: block;
+    }
+
+    body.lexicon>#whole>#container>#bodyCol1>.bubble .bubHead>div>h1>em {
+        font-size: 1.1em;
+    }
+
+    #bodyCol1>div>.bubBody>#lexicon>div>h2,
+    #pageCont>tbody>tr>td>p.moreRefs2 span,
+    #pageCont>tbody>tr>td>p.moreRefs2 span+span {
+        text-shadow: 0 0 0 #000;
+    }
+
+	body div#pageCont,
+    body #bodyCol1>div>.bubBody>#lexicon>#lexSearch,
+    body #bodyCol1>div>.bubBody>#lexicon>table>tbody>tr>#lexDict *,
+    body #bodyCol1>div>.bubBody>#lexicon>#lexResults>div>#bibleTable>tbody>tr img,
+    body #bodyCol1>div>.bubBody>#lexicon>#lexResults div#concordanceResults > p+div,
+    body #bodyCol1>div>.bubBody>#lexicon>#lexResults>div>#bibleTable>tbody>tr>td:first-child {
+        display: none !important;
+    }
+    body #bodyCol1>div>.bubBody>#lexicon>#lexResults .__hidden { display: inline-block !important; }
+
+    #bodyCol1>div>.bubBody>#lexicon>#lexTitle,
+    #bodyCol1>div>.bubBody>#lexicon>#lexResults *,
+    #bodyCol1>div>.bubBody>#lexicon>table td div {
+        border-width: 0;
+    }
+
+    #bodyCol1>div>.bubBody>#lexicon>#lexTitle,
+    #bodyCol1>div>.bubBody>#lexicon>#lexResults>h2,
+    #bodyCol1>div>.bubBody>#lexicon>#lexResults>div>table,
+    #bodyCol1>div>.bubBody>#lexicon>table>tbody>tr>td>div:first-child {
+        padding: 15px 0 0;
+        border-radius: 0;
+        border-top: solid 1px #000;
+    }
+
+    #bodyCol1>div>.bubBody>#lexicon>table>tbody>tr>td>div:first-child {}
+
+    #bodyCol1>div>.bubBody>#lexicon>#lexTitle>h1 {
+        text-align: left;
+    }
+
+    #bodyCol1>.bubble>.bubBody>div>h2 {
+        font-size: 1.25em;
+    }
+
+    #bodyCol1>.bubble>.bubBody>div>p {
+        font-size: 1.15em;
+        font-family: times new roman, times, roman, serif;
+    }
+
+    #container>#pageControls {
+        display: none;
+    }
+
+    img[src="http://v3-dev.blueletterbible.org/assets-v3/images/tabs/tabInterlinear_a.png"],
+    img[src="http://v3-dev.blueletterbible.org/assets-v3/images/tabs/tabBibles_a.png"],
+    img[src="http://v3-dev.blueletterbible.org/assets-v3/images/tabs/tabCrossrefs_a.png"],
+    img[src="http://v3-dev.blueletterbible.org/assets-v3/images/tabs/tabCommentaries_a.png"],
+    img[src="http://v3-dev.blueletterbible.org/assets-v3/images/tabs/tabDictionaries_a.png"],
+    img[src="http://v3-dev.blueletterbible.org/assets-v3/images/tabs/tabMisc_a.png"],
+    tbody#concTable>tr>td:nth-child(2) *,
+    tbody#concTable>tr>td:nth-child(5) *,
+    #interClose,
+    #interVSinter span[class="off"] {
+        display: none;
+    }
+
+    tbody#concTable>tr>td:nth-child(3) {
+        text-align: left;
+    }
+
+    body.imageDisplay>div>div>#imgParade,
+    body.imageDisplay>div>div>#bodyCol1>div>#imgData>.imgNavB,
+    body.imageDisplay>div>div>#bodyCol1>div>#imgBody>#imgArrowAlert,
+    body.imageDisplay>div>div>#bodyCol1>div>#imgBody>* {
+        display: none;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>div>#imgBody>#imgPrint {
+        display: block;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>div>#imgData {
+        border-width: 0;
+        border-top: solid #000 1px;
+        margin-top: 15px;
+        padding-top: 15px;
+        text-align: left;
+        position: inherit;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>div>#imgData>.textPop {
+        position: inherit;
+        bottom: inherit;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>div>#imgData>.textPop.hide {
+        display: block;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>div>#imgData>.textPop>div {
+        width: 100%;
+        text-align: left;
+        font-size: 1.1em;
+        opacity: 1;
+        border-width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>#imgDisclaimer {
+        display: none;
+    }
+
+    body.imageDisplay>div>div>#bodyCol1>div>.bubHead>div>h1 {
+        font-size: 1.3em;
+        margin-bottom: 15px;
+    }
+
+    .bible .bibleTable>tbody>tr>td+td+td>p,
+    .bible .bibleTable>tbody>tr>td+td+td>div {
+        color: #000;
+    }
+
+    .bible .bibleTable>tbody>tr>td:first-child div,
+    .bible .bibleTable>tbody>tr>td:first-child p {
+        color: #000;
+    }
+
+    a.ftnt {
+        color: #000;
+    }
+
+    #lexicon>.lexiconTable,
+    #lexicon>.lexiconTable>.row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #lexicon>.lexiconTable {
+        justify-content: space-between;
+        align-items: baseline;
+        font-size: 80%;
+    }
+
+    #bodyCol1>div>.bubBody>#lexicon>#lexTitle {
+        padding-top: 0px;
+        padding-bottom: 15px;
+    }
+
+    #lexicon>.lexiconTable>.row {
+        flex: 0 0 45%;
+    }
+
+    #lexicon>.lexiconTable>.row .columns:first-child.medium-6 {
+        padding: 0;
+    }
+
+    #lexicon>.lexiconTable .lexicon-label {
+        background-color: #eee !important;
+    }
+
+    #lexicon>#lexResults .lexicon-label h2 {
+        color: black;
+        text-shadow: none;
+    }
+
+    #lexicon>.lexiconTable>.lex-expand>.row {
+        margin-bottom: 10px;
+    }
+
+	#lexicon>.lexiconTable div#HebrewLexImg>p+p,
+    #lexicon>.lexiconTable .lex-expand #hebrewGreekImg>p:nth-child(2) {
+        display: none;
+    }
+
+    #lexicon>.lexiconTable * {
+        border: none;
+    }
+
+	.bdb-thayer-lex #lexyText.show-ten,
+    #lexicon>.lexiconTable>.lex-expand>.row #thayersText.show-ten,
+    #lexicon>.lexiconTable>.lex-expand #InflectionOccurrences {
+        height: auto;
+    }
+
+    #lexicon>#lexResults.bible,
+    .bdb-thayer-lex #lexyText.show-ten,
+    #lexicon>.lexiconTable>.lex-expand #thayersText,
+    .lexiconTable>.lex-expand #outlineBiblical {
+        font-size: 75%;
+    }
+
+    #lexicon>#lexResults>#pageCont {
+        font-size: 90%;
+    }
+
+    #lexicon>#lexResults>#pageCont>.row {
+        margin-bottom: 10px;
+    }
+
+    #lexicon>#lexResults>#pageCont>div>div {
+        padding: 0;
+    }
+
+    #lexicon>#lexResults>#pageCont>div>div>p,
+    #lexicon>#lexResults>#pageCont>div>div>p>a {
+        display: flex;
+        margin-top: 0;
+    }
+
+    #lexicon>#lexResults>#pageCont>div>div>p>span,
+    #lexicon>#lexResults>#pageCont>div>div>p>a>span {
+        color: black;
+        text-shadow: none;
+        width: auto;
+        margin-bottom: 0;
+    }
+}

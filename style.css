@@ -1,0 +1,53 @@
+.bibleText {
+    font-family: 'SBL Hebrew';
+    font-size: 32px;
+}
+
+.verse-SBL-Hebrew {
+    font-family: 'SBL Hebrew';
+    font-size: 32px;
+}
+
+
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wordBlock {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    border-bottom: 2px dotted #ddd;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    text-align: center;
+    line-height: normal;
+    background-color: #fff;
+    min-width: 100px;
+    padding: 12px;
+    margin: 5px 0;
+}
+
+.interlinearGerman {
+    color: #000000;
+}
+
+.verse-Ezra-SIL {
+    font-family: 'Ezra SIL';
+    font-size: 32px;
+    margin-top: 6px;
+    color: #3e60a4;
+}
+
+.transliterated {
+    /* font-family: 'ezra_silregular'; */
+    font-family: 'Ezra SIL SR';
+    margin-top: 6px;
+    color: #3e60a4;
+}
+
+.wordStrongs {
+    margin-top: 6px;
+    color: #3e60a4;
+}

@@ -1,0 +1,237 @@
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge {
+	padding-top:7px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge > form > div > select {
+	margin-left:0;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge > form > div > button {
+	border:solid #91a6c3 1px;
+	font-size:12px;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:3px;
+	font-weight:bold;
+	background-color:#bbcada;
+	color:#546b7e;
+	text-shadow: 1px 1px 0 #e4eaee;
+	padding:0 5px;
+	margin-top:2px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge > form > div > button:hover {
+	background-color:#869ab9;
+	color:#e9eef1;
+	text-shadow: 1px 1px 0 #869ab9;
+	border-color:#355488;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge > form > div > #mvTextWidge {
+	border: 1px solid #355488;
+	border-radius:6px;
+	margin:7px 0 15px;
+	width:100%;
+	height:90px;
+	padding:3px;
+	font-size:1.0em;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge > form > div > select > option {
+	background-color: #EAEFF2;
+	color: #627B9F;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge > form > div > select > option.ancientLang {
+	color: #74775D;
+	background-color: #F2F4E3;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge button {
+	margin-left:6px;
+	padding: 3px 7px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#multiFormWidge #mvFormSelectDropU > img {
+	width:51px;
+	height: 23px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions {
+	font-size:0.85em;
+	/*display:none;*/
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions img {
+	vertical-align: baseline;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div {
+	margin:7px;
+	text-align:center;
+	background-color:#F9FAFB;
+	border:1px solid #C5D2E0;
+	border-radius:4px;
+	padding:3px;
+	-moz-user-select:none;
+	-webkit-user-select:none;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > div {
+	width:100%;
+	margin-top:12px
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > div > p {
+	padding:0 15px 0;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table {
+	margin:auto;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr + tr > td {
+	padding:3px 0px;
+	width: 50%;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr + tr + tr > td {
+	padding:0px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div {
+	color:#39547F;
+	font-weight:bold;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div + div {
+	color:#000;
+	font-weight:normal;
+	cursor:pointer;
+	margin-top:2px;
+}
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > .numDelimOff {
+	color:#bbb;
+	}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div > div {
+	border: 1px solid #F9FAFB;
+	padding:2px 2px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div > div > img {
+	width:7px;
+	height:7px;
+	margin-right: 5px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div > div:hover {
+	background-color: #F8F8DA;
+	border-color: #D1CEA1;
+	border-radius: 3px 3px 3px 3px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div > div#mv_sblabbrev {
+  margin-left:15px;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div > div#mvOptions > div > table > tbody > tr > td > div > div#mv_sblabbrev.disabled {
+  color:#aeaeae;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td {
+	vertical-align: bottom;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel {
+	position:absolute;
+	display: flex;
+	flex-direction: row;
+	user-select: none;
+	left:76px;
+	top:1px;
+	width:217px;
+	padding:0 0 0 5px;
+	border-radius:5px;
+	border:solid #a5b5c6 1px;
+	background-color:#dee7e9;
+	z-index:50;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div {
+	display: flex;
+	flex-direction: column;
+	border:solid #c5d2e0 1px;
+	border-width:0 1px;
+	background-color:#eaeff2;
+	margin-right:5px;
+	padding:7px 0;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > img {
+	position:absolute;
+	bottom:14px;
+	left:-18px;
+	transform: rotate(90deg);
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div > img.appClose {
+	position:absolute;
+	top:-5px;
+	left:119px;
+	cursor:pointer;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div + div + div {
+	background-color:#f2f4e3;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div > img {
+	display:none;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div > span {
+	font-size:1.12em;
+	font-weight:bold;
+	width:63px;
+	text-align:center;
+	padding:2px 4px;
+	color:#627b9f;
+	cursor:pointer;
+}
+
+@-moz-document url-prefix() {
+	body > div > div#container > div#bodyCol2 > div > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div > span {
+		padding:1px 4px;
+	}
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div > span:hover {
+	background-color:#ced9e5;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div > span.null:hover {
+	background-color:#eaeff2;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div + div + div > span {
+	color:#74775d;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div + div + div > span:hover {
+	color:#555842;
+	background-color:#d4d7c1;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div + div + div > span.null:hover {
+	background-color:#f2f4e3;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div + div + div > span.extra {
+    color: #930018;
+}
+
+div#bodyCol2 > div.rtBubWidget > div.bubBody > div>  div#multiFormWidge > form#mvFormWidge > div#mvFormItemsWidge > table > tbody > tr > td > div#mvFormSearchSel > div + div + div > span.extra:hover {
+    background-color: #F5DCD8;
+}

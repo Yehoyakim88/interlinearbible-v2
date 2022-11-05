@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_1_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 326.4 333.7" style="enable-background:new 0 0 326.4 333.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:url(#SVGID_1_);}
+</style>
+<path class="st0" d="M164,305.3l-19.7,23l5.7-44.6L7.6,272.1l33-86.1l9.9-0.1l1.8-8.8c-8.8-2-15.3-9.9-15.3-19.4V24.4
+	c0-11,8.9-19.9,19.9-19.9h213c11,0,19.9,8.9,19.9,19.9v133.3c0,7.3-4,14-10.3,17.4l2.2,10.3l6.5,0.9l30.9,83L177.3,283l5,46.2
+	L164,305.3z"/>
+<path class="st0" d="M314,266.2l-28.6-76.8l-6.8-0.9l-3.3-15.4c6.3-2.3,10.8-8.3,10.8-15.4V24.4c0-9.1-7.3-16.4-16.4-16.4h-213
+	c-9.1,0-16.4,7.3-16.4,16.4v133.3c0,8.9,7.1,16.2,16,16.4l-3.1,15.3l-10.3,0.1L12.5,269l141.4,11.5l-4.7,36.7l14.9-17.4l13.4,17.4
+	l-4-37.3L314,266.2z"/>
+<path d="M286.1,157.7c0,9.1-7.3,16.4-16.4,16.4h-213c-9.1,0-16.4-7.3-16.4-16.4V24.4C40.4,15.3,47.7,8,56.8,8h213
+	c9.1,0,16.4,7.3,16.4,16.4L286.1,157.7L286.1,157.7z"/>
+<radialGradient id="SVGID_1_" cx="-17.9219" cy="474.7335" r="117.415" gradientTransform="matrix(1.033 0 0 -1.0351 179.825 579.9282)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFFFFF"/>
+	<stop  offset="9.099999e-02" style="stop-color:#FFFFFF"/>
+	<stop  offset="0.102" style="stop-color:#FBFCFD"/>
+	<stop  offset="0.282" style="stop-color:#C0CAD8"/>
+	<stop  offset="0.455" style="stop-color:#8EA0BA"/>
+	<stop  offset="0.617" style="stop-color:#677FA3"/>
+	<stop  offset="0.766" style="stop-color:#4C6892"/>
+	<stop  offset="0.897" style="stop-color:#3B5A88"/>
+	<stop  offset="0.995" style="stop-color:#355584"/>
+	<stop  offset="1" style="stop-color:#355584"/>
+</radialGradient>
+<polygon class="st1" points="270.9,157.6 55.5,157.6 55.5,23.9 270.9,23.9 "/>
+<path class="st0" d="M188.5,90.6l-51-29.7l14.2,54.1l9.3-14.2l14.6,18.2l8-8.9l-12.4-16L188.5,90.6z M177.9,109.2l-2.2,2.7
+	l-15.1-17.7l-7.5,10.6l-8.9-35l33.2,19.1L163.2,91L177.9,109.2z"/>
+<polygon points="177.4,88.8 144.2,69.8 153,104.8 160.6,94.1 175.6,111.9 177.9,109.2 163.2,91 "/>
+<path class="st0" d="M270.9,159.7H53.4v-138h219.7v138H270.9z M57.7,155.4h211.1V26H57.7V155.4z"/>
+<g>
+	<path d="M42.9,189.5L12.5,269l141.4,11.5l-4.7,36.7l14.9-17.4l13.4,17.4l-4-37.3L314,266.2l-28.6-76.8l-6.8-0.9l-5.6-26.4
+		c-8.3-6-22.2-15.1-44.9-14.1c-16.9,0.7-39.2,5.5-64.8,24.9c-14.3-10.3-34-25.2-58.2-25.2s-45.9,13.8-47.2,18.8l-4.6,22.9
+		L42.9,189.5z"/>
+	<path class="st0" d="M69.8,168l-20.3,75.7c11.9-5.6,32.2-11.6,56.3-8c15.1,2.3,32.1,7.4,48.2,21l8.6-62l7,62.5
+		c12.1-10,30.1-18.7,51.2-21.8c16.9-2.4,40.5-1.6,56,7.7L256.7,164c-12.8-7.2-32.2-8.9-50.3-4.7c-12.4,3.5-26.1,9.1-43.1,26
+		C143.2,164.6,105,145.4,69.8,168z"/>
+</g>
+</svg>

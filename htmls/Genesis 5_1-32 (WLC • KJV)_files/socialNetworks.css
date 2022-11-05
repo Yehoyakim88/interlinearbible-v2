@@ -1,0 +1,40 @@
+
+#rtNavBubDDfDiv.rtBub_1015 > .bubBody > div > p:first-child,
+#rtBub_1015 > .bubBody > div > p:first-child {
+	padding-top: 11px;
+}
+
+#rtNavBubDDfDiv.rtBub_1015 > .bubBody > div > p,
+#rtBub_1015 > .bubBody > div > p {
+	text-align:center;
+	padding: 0 22px 15px;
+}
+
+#rtNavBubDDfDiv.rtBub_1015 > .bubBody > div > p > a > img,
+#rtBub_1015 > .bubBody > div > p > a > img {
+	padding:0;
+	border-width:0;
+	margin-left:15px;
+	margin-top:2px;
+	margin-bottom:0;
+}
+
+#rtNavBubDDfDiv.rtBub_1015 > .bubBody > div > p > a:first-child > img,
+#rtBub_1015 > .bubBody > div > p > a:first-child > img {
+	margin-left:0;
+}
+
+#rtBub_1015 > .bubBody > div > #mc_embed_signup > form input[type="text"] {
+	width: 198px;
+}
+
+div.social-networks {
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 8px;
+}
+
+div.social-networks a img {
+	margin: 0 10px;
+	width: 35px;
+}

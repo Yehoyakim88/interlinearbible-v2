@@ -1,0 +1,19 @@
+#bodyCol2 > .bubble > .bubBody > p#rtBub_1001_1_other_searches {
+	color: #39547f;
+	cursor: pointer;
+	margin: 10px;
+	text-align: center;
+	font-size: .8em;
+}
+
+#bodyCol2 > .bubble > .bubBody > p#rtBub_1001_1_other_searches:hover {
+	text-decoration: underline;
+}
+
+#bodyCol2 > .bubble > .bubBody > div#rtBub_1001_1 > div#searchPrime > form div#advOpt {
+	margin-bottom: 0;
+}
+
+#bodyCol2 > #rtBub_1001 {
+	overflow: visible;
+}

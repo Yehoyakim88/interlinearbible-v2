@@ -1,0 +1,11 @@
+/* use Ezra SIL - Regular in .woff format */
+@font-face {
+  font-family: 'SILEOTSR';
+  src: url('./fonts/SILEOTSR.ttf') format('truetype');
+}
+
+/* use Ezra SIL SR - Regular in .woff format */
+@font-face {
+  font-family: 'SILEOT';
+  src: url('./fonts/SILEOT.ttf') format('truetype');
+}
