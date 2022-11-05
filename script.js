@@ -7,7 +7,7 @@ async function fetchBible() {
   let transliterationReverse;
   let germanBible;
   let germanBibleAsJson;
-  let germanVerse;
+  let englishWord;
   let germanVerseAsArray;
   let germanVerseAsArrayReverse;
 
@@ -19,45 +19,29 @@ async function fetchBible() {
   transliterationReverse = transliteration.reverse();
 //   transliteration = cleanTransliteration(transliteration);
 
-genesis = await fetch('./genesis.json');
+genesis = await fetch('./wo_transliterated/genesis.json');
 genesis = await genesis.json();
 console.log(genesis);
 
-  
 
-  bibleFile = await fetch("./wlc.json");
-  bibleFileAsJson = await bibleFile.json();
-  verse = bibleFileAsJson["books"][13]["chapters"][19]["verses"][11]["text"];
-  verse = replaceSpecialChars(verse);
-  verseArray = verseAsSingleWordsArray(verse);
-  verseArrayReverse = verseArray.reverse();
 
-  germanBible = await fetch("./schlachter.json");
-  germanBibleAsJson = await germanBible.json();
-  germanVerse = germanBibleAsJson["books"][25]["chapters"][19]["verses"][11]["text"];
-  germanVerseAsArray = verseAsSingleWordsArray(germanVerse);
-  germanVerseAsArrayReverse = germanVerseAsArray.reverse();
+verse = genesis[0]['verse'];
+console.log(verse);
 
-  console.log(germanBibleAsJson);
-//   console.log(verse);
-
-  
-  
-
-  for(let i = verseArrayReverse.length-1; i > 0; i--) {
+  for(let i = 0; i < verse.length; i++) {
     document.getElementById("content").innerHTML += /*html*/ `
     <div id="word-block-${i}" class="wordBlock">
-        <div class="verse-Ezra-SIL">${verseArrayReverse[i]}</div>
-        <div class="transliterated">${transliteration[i-1]}</div>
-        <div class="wordStrongs">STRONG's</div>
+        <div class="interlinearGerman">${verse[i]['text']}</div>
+        <div class="verse-Ezra-SIL">${verse[i]['word']}</div>
+        <div class="wordStrongs">${verse[i]['number']}</div>
     </div>
     `;
   }
-  for(let i = germanVerseAsArrayReverse.length-1; i > 0; i--) {
-    document.getElementById(`word-block-${i-9}`).innerHTML += /*html*/ `
-    <div class="interlinearGerman">${germanVerseAsArrayReverse[i]}</div>
-  `;
-  }
+  // for(let i = germanVerseAsArrayReverse.length-1; i > 0; i--) {
+  //   document.getElementById(`word-block-${i-9}`).innerHTML += /*html*/ `
+  //   <div class="interlinearGerman">${germanVerseAsArrayReverse[i]}</div>
+  // `;
+  // }
 
 //   document.getElementById("text-displayer").innerHTML += /*html*/ `
 //       <h1>Verse as Array:</h1>
