@@ -1,0 +1,197 @@
+body > #scriptDiv {
+	position:absolute;
+	top:0px;
+	min-width:1px;
+	min-height:1px;
+	z-Index: 101;
+}
+
+body > #scriptDiv.hidden {
+	display:none;
+}
+
+body > #scriptDiv * {
+	margin:0;
+	box-sizing:border-box;
+	border:solid #000 0;
+}
+
+body > #scriptDiv *:not(.poetry) {
+	padding: 0;
+}
+
+body > #scriptDiv > #blbTagger {
+	width:380px;
+	margin-bottom:7px;
+}
+
+body > #scriptDiv > #blbTagger > .bubHead {
+	background-color:#637a9f;
+	border:solid #355488 1px;
+	border-bottom:solid #526b95 1px;
+	padding:1px 1px 0;
+	border-radius:3px 3px 0 0;
+}
+
+body > #scriptDiv > #blbTagger > .bubHead > div {
+	position:relative;
+	background-color:#587096;
+	border:solid #5c749a 2px;
+	border-bottom:solid #5c749a 0;
+	padding:1px 1px 0;
+	border-radius:2px 2px 0 0;
+
+}
+
+body > #scriptDiv > #blbTagger > .bubHead > div > h6 {
+	color:#fff;
+	font-weight:bold;
+	font-family:verdana,helvetica;
+	font-size:0.9em;
+	text-shadow: #355488 1px 1px 0;
+	padding:4px 7px 6px;
+	background-color:#627b9f;
+	border:solid #6980a3 1px;
+	border-bottom:solid #6980a3 0;
+	letter-spacing:0;
+	line-height:1em;
+	text-align: center;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody {
+	overflow:auto;
+	text-align:left;
+	max-height:300px;
+	font-family:arial,helvetica;
+	line-height:23px;
+	background-color:#fcfdfd;
+	border: 1px solid #6980a3;
+	border-bottom: none;
+	border-width:0 2px 2px;
+	border-radius: 0;
+	box-shadow: 0px 0px 30px #6980a3;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody > div {
+	font-family:arial, helvetica;
+	font-size:0.9em;
+	color:#000;
+	padding: 7px 7px;
+	background-color:#f9fafb;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody > div a:first-of-type {
+	font-weight: bold;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody > div .vRef {
+	font-size: 10px;
+	color: dimgrey;
+	position: relative;
+	top:-3px;
+	left: 2px;
+	line-height: 23px;
+}
+
+body > #scriptDiv > #blbTagger > a.blb-cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ECF1FA;
+	text-align: center;
+	font-size: 10px;
+	font-family: 'Montserrat', 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #637A9F;
+	padding: 4px 10px;
+	margin:0 auto;
+	border-radius:2px;
+	text-decoration: none;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 0px -1px 4px rgba(97, 130, 183, 0.26);
+	border: 2px solid #6280A6;
+	border-top: none;
+	border-radius: 0 0 3px 3px;
+	line-height: 4em;
+}
+
+body > #scriptDiv > #blbTagger > a.blb-cta:hover {
+	background-color: #D9E4F4;
+	box-shadow: none;
+}
+
+body > #scriptDiv > #blbTagger > a.blb-cta img {
+	margin-left:10px;
+	width: 150px;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody > div a:link,
+body > #scriptDiv > #blbTagger > .bubBody > div a:visited {
+	color:#39547f;
+	text-decoration:none;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody > div a:hover {
+	color:#39547f;
+	text-decoration: underline;
+}
+
+body > #scriptDiv > #blbTagger > .bubBody > div a.ftnt {
+	font-size: 10px;
+	line-height: 23px;
+	position: relative;
+	top: -3px;
+	left: 0;
+	vertical-align: top;
+}
+
+body > #scriptDiv > #blbTagger > .close {
+	background-color: #cdd8e4;
+	border: 1px solid #778fb8;
+	border-radius: 4px;
+	color: #6980a3;
+	font-size: 1em;
+	line-height: 23px;
+	font-weight: bold;
+	height: 23px;
+	position: absolute;
+	right: 6px;
+	text-align: center;
+	top: 6px;
+	width: 30px;
+	user-select: none;
+}
+
+body > #scriptDiv.noTouch #blbTagger > .close {
+	display:none;
+}
+
+body > #scriptDiv > #blbTagger > .close > span {
+    position: relative;
+}
+
+
+@media only screen and (min-width: 400px) and (max-width: 911px) {
+	body:not(.viewport) > #scriptDiv > #blbTagger > .bubBody > div {
+		font-size:1.1em;
+		line-height: 1.4em;
+	}
+
+	body:not(.viewport) > #scriptDiv > #blbTagger {
+		width:360px;
+	}
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 399px) {
+	body:not(.viewport) > #scriptDiv > #blbTagger > .bubBody > div {
+		font-size:1.1em;
+		line-height: 1.4em;
+	}
+
+	body:not(.viewport) > #scriptDiv > #blbTagger {
+		width:320px;
+	}
+}
